@@ -1,0 +1,37 @@
+	<svg width="44" height="36" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <style>
+            svg {
+                transform: scale(0.5);
+            }
+        </style>
+		<circle cx="22" cy="18.1233" r="5.12328" fill="#000">
+			<animateTransform
+				attributeName="transform"
+				type="translate"
+				values="0 0; 0 -10; 0 0"
+				dur="0.6s"
+				repeatCount="indefinite"
+				begin="0s"
+			/>
+		</circle>
+		<circle cx="5.2" cy="18.1233" r="5.12328" fill="#000">
+			<animateTransform
+				attributeName="transform"
+				type="translate"
+				values="0 0; 0 -10; 0 0"
+				dur="0.6s"
+				repeatCount="indefinite"
+				begin="0.2s"
+			/>
+		</circle>
+		<circle cx="38.8767" cy="18.1233" r="5.12328" fill="#000">
+			<animateTransform
+				attributeName="transform"
+				type="translate"
+				values="0 0; 0 -10; 0 0"
+				dur="0.6s"
+				repeatCount="indefinite"
+				begin="0.4s"
+			/>
+		</circle>
+	</svg>

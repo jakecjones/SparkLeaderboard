@@ -13,9 +13,9 @@
         <div class="ux-avatar__border"></div>
         <img src={src} alt="avatar" />
     </div>
-    {#if name}
+    <!-- {#if name}
         <div class="ux-avatar__title ux-ml-1">{name}</div>
-    {/if}
+    {/if} -->
 </div>
 
 <style>

@@ -57,6 +57,8 @@ $backgroundGradient: linear-gradient(101deg, #1d1d1d 4.6%, #000 93.99%);
 .ux-avatar {
 	display: flex;
 	align-items: center;
+	color: $text_color;
+	position: relative;
 	&__badge {
 		border-radius: 50%;
 		position: relative;
@@ -73,8 +75,13 @@ $backgroundGradient: linear-gradient(101deg, #1d1d1d 4.6%, #000 93.99%);
 	&__title {
 		color: $text_color;
 		font-size: $font_size;
-		font-weight: 700;
+		font-weight: 300;
 		margin-bottom: 0.5rem;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		top: calc(100% + 1rem);
+		width: 100%;
 	}
 	img {
 		width: 100%;
