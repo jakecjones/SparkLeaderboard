@@ -4,7 +4,7 @@
 	import { app } from '../firebase/config';
 	import { getFirestore, onSnapshot, collection, query } from 'firebase/firestore';
 	import Avatar from '$lib/components/Avatar.svelte';
-    import Loader from '$lib/assets/images/Loader.svg';
+    import Loader from '$lib/assets/images/loader.svg';
 	const db = getFirestore(app);
 
 	// Define the game names and display names
