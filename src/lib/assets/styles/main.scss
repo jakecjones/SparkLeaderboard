@@ -1,0 +1,20 @@
+@import 'components';
+@import 'utility';
+@import 'fonts';
+
+
+body {
+    touch-action: pan-x pan-y;
+
+	background-color: #000;
+
+	color: $text_color;
+	font-family: 'JetBrains Mono';
+	font-size: 12px;
+	font-style: italic;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+}

@@ -1,0 +1,107 @@
+@import 'variables';
+
+// text styles
+.ux-text-primary {
+    color: #007bff;
+}
+
+.ux-text-secondary {
+    color: #6c757d;
+}
+
+// bg styles
+.ux-bg-primary {
+    background-color: $primary;
+}
+.ux-bg-secondary {
+    background: unset;
+    background-color: $secondary;
+}
+
+// border styles
+.ux-border-invisible {
+    border: 1px solid transparent;
+}
+.ux-border {
+    border: 2px solid $text_color;
+    box-sizing: border-box;
+}
+
+.ux-section {
+    width: 100%;
+}
+
+.ux-flex {
+    display: flex;
+}
+
+.ux-flex-column {
+    flex-direction: column;
+}
+
+.ux-flex-row {
+    flex-direction: row;
+}
+
+.ux-justify-center {
+    justify-content: center;
+}
+
+.ux-align-center {
+    align-items: center;
+}
+.ux-justify-space-between {
+    justify-content: space-between;
+}
+
+.ux-action {
+    margin-left: .75rem;
+}
+.ux-icon {
+    font-size: 1.5rem;
+    margin-right: .75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+        width: 100%;
+    }
+}
+.ux-relative {
+    position: relative;
+}
+.ux-hr {
+    border: 0;
+    border-top: 2px dashed $text_color;
+    margin: 1rem 0;
+    width: 75%;
+}
+@for $i from 1 through 5 {
+    .ux-mb-#{$i} {
+        margin-bottom: #{$i}rem;
+    }
+    .ux-mt-#{$i} {
+        margin-top: #{$i}rem;
+    }
+    .ux-ml-#{$i} {
+        margin-left: #{$i}rem;
+    }
+    .ux-mr-#{$i} {
+        margin-right: #{$i}rem;
+    }
+    .ux-p-#{$i} {
+        padding: #{$i}rem;
+    }
+    .ux-pl-#{$i} {
+        padding-left: #{$i}rem;
+    }
+    .ux-pr-#{$i} {
+        padding-right: #{$i}rem;
+    }
+    .ux-pt-#{$i} {
+        padding-top: #{$i}rem;
+    }
+    .ux-pb-#{$i} {
+        padding-bottom: #{$i}rem;
+    }
+}
