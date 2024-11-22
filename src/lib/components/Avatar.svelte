@@ -2,12 +2,13 @@
     export let name: string | undefined | null;
     export let src;
     export let size = 'sm';
+    export let classNames = '';
 
     $: sizeClass = size === 'sm' ? 'ux-avatar--sm' :
                    size === 'lg' ? 'ux-avatar--lg' : 'ux-avatar--md';
 </script>
 
-<div class="ux-avatar">
+<div class={`ux-avatar ${classNames}`}>
     <div class={`ux-avatar__badge ${sizeClass}`}>
         <div class="ux-avatar__border"></div>
         <img src={src} alt="avatar" />

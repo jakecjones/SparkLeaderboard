@@ -68,7 +68,7 @@ $backgroundGradient: linear-gradient(101deg, #1d1d1d 4.6%, #000 93.99%);
 		width: 110%;
 		height: 110%;
 		border-radius: 50%;
-		background: linear-gradient(90deg, $primary 4.6%, #ddab50 93.99%);
+		background: #ddab50;
 	}
 	&__title {
 		color: $text_color;
