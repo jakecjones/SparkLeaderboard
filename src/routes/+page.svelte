@@ -14,7 +14,7 @@
 			displayName: 'Enzo — The Next Level'
 		},
 		{
-			name: 'Make Ship Happen',
+			name: 'make-ship-happen',
 			displayName: 'Make Ship Happen'
 		},
 		{
