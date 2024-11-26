@@ -127,7 +127,7 @@
 				players.sort((a, b) => b.score - a.score);
 
 				// Get top 3 players
-				let topPlayers = players.slice(0, 3);
+				let topPlayers = players.slice(0, 5);
 
 				// Build game data
 				gamesData.push({
@@ -299,113 +299,20 @@
 			<div class="ux-dash__game ux-border">
 				<div class="ux-dash__game-name ux-mb-1">{game.displayName}</div>
 				<div class="ux-dash__game-scores">
-					{#each game.topPlayers as player}
+					{#each game.topPlayers as player, index}
 						<div class="ux-dash__game-score">
-							<div class="ux-dash__game-score-name">{player.playerName}</div>
+							<div class="ux-dash__game-score-name">{index + 1}. {player.playerName}</div>
 							<hr class="ux-hr" />
 							<div class="ux-dash__game-score-value">{player.score}</div>
 						</div>
 					{/each}
+                    <div class="ux-dash__avatars">
+                        {#each game.topPlayers as player, index}
+                            <Avatar size="sm" src={player.avatarUrl} name={player.playerName} />
+                        {/each}
+                    </div>
 				</div>
 			</div>
 		{/each}
 	</div>
 </section>
-
-<style lang="scss">
-	.ux-dash {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		height: 100vh;
-		width: 100vw;
-		background-image: url('../lib/assets/images/bg.png');
-		background-size: contain;
-		background-position: bottom center;
-		background-repeat: no-repeat;
-		position: relative;
-		box-sizing: border-box;
-
-		&__games {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			position: absolute;
-			bottom: 10vh;
-			width: 90%;
-			font-size: 1rem;
-			font-weight: 300;
-
-			& > .ux-dash__game {
-				width: 25vw;
-				min-height: 30vh;
-				height: auto;
-				display: flex;
-				flex-direction: column;
-				align-items: flex-start;
-				justify-content: flex-start;
-				margin: 0 10px;
-				padding: 2rem;
-				border-radius: 5px;
-				background-color: rgba(0, 0, 0, 0.98);
-				box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-				box-sizing: border-box;
-			}
-		}
-
-		&__game-name {
-			font-size: 1.2rem;
-			font-weight: 500;
-		}
-
-		&__game-scores {
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-		}
-
-		&__game-score {
-			display: flex;
-			flex-direction: row;
-			width: 100%;
-			margin: 0.5rem 0;
-			align-items: center;
-		}
-
-		&__game-score-name {
-			flex: 1;
-			/* no line break */
-			white-space: nowrap;
-		}
-
-		&__game-score-value {
-			/* Add styles if needed */
-		}
-	}
-
-	/* Floating Avatars Styles */
-	.floating-avatars {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		pointer-events: none;
-		overflow: hidden;
-	}
-
-	.floating-avatar-wrapper {
-		position: absolute;
-		width: 70px;
-		height: 70px;
-		/* No CSS animations */
-	}
-
-	.floating-avatar-wrapper > :global(*) {
-		width: 100%;
-		height: 100%;
-		border-radius: 50%;
-	}
-</style>
