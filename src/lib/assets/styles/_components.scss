@@ -540,15 +540,13 @@ $backgroundGradient: linear-gradient(101deg, #1d1d1d 4.6%, #000 93.99%);
 	}
 
 	&__game-name {
-		font-size: 1.4rem;
+		font-size: 1.25vw;
 		font-weight: 600;
 		position: absolute;
 		top: -20px;
 		background: linear-gradient(101deg, #1d1d1d 4.6%, #252525 93.99%);
-		padding: 0.5rem 2rem 0.5rem 1rem;
-		// make this a slanted rectangle on both the left AND right sides
+		padding: 0.5rem 3rem 0.5rem 1rem;
 		clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
-
 	}
 
 	&__game-scores {
@@ -556,6 +554,7 @@ $backgroundGradient: linear-gradient(101deg, #1d1d1d 4.6%, #000 93.99%);
 		flex-direction: column;
 		width: 100%;
 		margin-top: 1rem;
+		font-size: 1.1vw;
 	}
 
 	&__game-score {
