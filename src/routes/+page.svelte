@@ -302,7 +302,7 @@
                 class="floating-avatar-wrapper"
                 bind:this={avatarElements[index]}
             >
-                <Avatar size="md" src={user.avatarUrl} name={user.playerName} />
+                <Avatar size="lg" src={user.avatarUrl} name={user.playerName} />
             </div>
         {/each}
     </div>

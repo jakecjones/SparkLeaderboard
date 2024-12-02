@@ -20,15 +20,15 @@
 
 <style>
     .ux-avatar--sm {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
     .ux-avatar--md {
         width: 70px;
         height: 70px;
     }
     .ux-avatar--lg {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 </style>
