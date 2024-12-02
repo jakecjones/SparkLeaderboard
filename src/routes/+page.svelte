@@ -11,17 +11,17 @@
     // Define the game names and display names
     const gamesList = [
         {
-            name: 'enzoNextLevel',
-            displayName: 'Enzo — The Next Level'
+            name: 'carmpart',
+            displayName: 'Carmpart'
         },
         {
             name: 'make-ship-happen',
             displayName: 'Make Ship Happen'
         },
         {
-            name: 'carmpart',
-            displayName: 'Carmpart'
-        }
+            name: 'enzoNextLevel',
+            displayName: 'Enzo — The Next Level'
+        },
     ];
 
     // Define the default avatar URL
